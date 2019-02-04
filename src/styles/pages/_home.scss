@@ -1,0 +1,99 @@
+.home {
+    .jumbotron {
+        background-color: $mid-purple !important;
+        border-radius: 0;
+        color: #fff;
+        a {
+            margin-right: 5px;
+        }
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #fff;
+        margin: 1em 0;
+        padding: 0; 
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: $purple;
+        .card {
+            max-width: 400px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 5%;
+            background-color: #333;
+            .card-text {
+                text-align: justify;
+            }
+            .card-title {
+                text-align: center;
+            }
+            &.santander-red-card {
+                background-color: $santander-red;
+            }
+            &.math-3d-card {
+                background-color: black;
+            }
+            &.exam-adapt-card {
+                background-color: $exam-adapt-color;
+                .card-text {
+                    color: #fff;
+                    text-align: justify;
+                }
+                .card-title {
+                    color: #fff;
+                    text-align: center;
+                }                
+                img {
+                    border-radius: 50%;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+            &.geriatron-card {
+                background-color: $geriatron-color;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                }
+            }
+            &.iso-blade-card {
+                background-color: $iso-blade-color;
+                .card-text {
+                    color: $mid-purple;
+                    text-align: justify;
+                    font-weight: 800;
+                }
+                .card-title {
+                    color: $mid-purple;
+                    text-align: center;
+                    font-weight: 800;
+                }  
+                img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                }
+            }
+            &.coco-game-card {
+                background-color: $coco-game-color;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    h1 {
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,72 @@
+.btn {
+    cursor: pointer;
+}
+
+.btn-round {
+    border: none;
+    border-radius: 17px;
+}
+
+.btn-meet-me {
+    font-weight: 800;
+    background-color: $orange;
+    color: #000;
+    &:hover {
+        background-color: $mid-purple;
+        color: $orange;
+    } 
+}
+
+.btn-santander-red {
+    background-color: #fff;
+    color: $santander-red;
+    &:hover {
+        background-color: $santander-grey;
+        color: #fff;
+    }
+}
+
+.btn-math-3d {
+    background-color: #fff;
+    color: $santander-red;
+    &:hover {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.btn-exam-adapt {
+    background-color: #fff;
+    color: $exam-adapt-color;
+    &:hover {
+        background-color: $exam-adapt-color;
+        color: #fff;
+    }
+}
+
+.btn-geriatron {
+    background-color: $exam-adapt-color;
+    color: #fff;
+    &:hover {
+        background-color: #fff;
+        color: $exam-adapt-color;
+    }
+}
+
+.btn-iso-blade {
+    background-color: $purple;
+    color: $iso-blade-color;
+    &:hover {
+        color: $purple;
+        background-color: $iso-blade-color;
+    }
+}
+
+.btn-coco-game {
+    background-color: $purple;
+    color: #fff;
+    &:hover {
+        color: $coco-game-color;
+        background-color: #fff;
+    }    
+}
