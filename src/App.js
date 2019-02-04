@@ -85,21 +85,21 @@ App.defaultProps = {
     cards: [
         {
             title: 'Streaming de música',
-            source: 'http://radio.totoringo.com/music',
+            source: 'http://radio.totoringo.com:8000/music',
             audioOnly: true,
             description: 'Los fines de semana (viernes y sábado) de 10:00pm a 11:00pm podrás dar clic en el repoductor para escuchar algo de música',
             class: 'iso-blade-card',
         },
         {
             title: 'Streaming de video',
-            source: 'http://radio.totoringo.com/videos',
+            source: 'http://radio.totoringo.com:8000/videos',
             audioOnly: false,
             description: 'Los fines de semana (viernes y sábado) de 11:00pm a 11:40pm podrás dar clic en el repoductor ver algunos videos',
             class: 'coco-game-card',
         },
         {
             title: 'Streaming de radio',
-            source: 'http://radio.totoringo.com/live',
+            source: 'http://radio.totoringo.com:8000/live',
             audioOnly: true,
             description: 'Fecha por confirmar',
             class: 'geriatron-card',
