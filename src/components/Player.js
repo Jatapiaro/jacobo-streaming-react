@@ -16,7 +16,7 @@ export default class Player extends React.Component {
                 }
                 {
                     this.props.youtube === false && this.props.audioOnly === false &&
-                    <video width="320" height="240" autoplay="false" controls>
+                    <video width="320" height="240" autoplay={false} controls>
                         <source src={this.props.source} type="video/ogg" />
                     </video>
                 }
