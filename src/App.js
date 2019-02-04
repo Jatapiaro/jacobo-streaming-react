@@ -57,6 +57,29 @@ export default class App extends Component {
                             )
                         }
                     </div>
+                    <div style={{ marginTop: 40 }} className="projects-label">
+                        <center>
+                            <h1>Medios</h1>
+                        </center>
+                    </div>
+                    <div className="projects">
+                        {
+                            this.props.media.map((card, i) =>
+                                <Card key={i} className={card.class} body inverse>
+                                    <center>
+                                        <Player
+                                            audioOnly={card.audioOnly}
+                                            source={card.source}
+                                        />
+                                    </center>
+                                    <CardBody>
+                                        <CardTitle>{card.title}</CardTitle>
+                                        <CardText>{card.description}</CardText>
+                                    </CardBody>
+                                </Card>
+                            )
+                        }
+                    </div>
                     <div style={{marginTop: 40}} className="projects-label">
                         <center>
                             <h1>Imágenes</h1>
@@ -138,5 +161,21 @@ App.defaultProps = {
             src: "http://jacobo.totoringo.com/wp-content/uploads/2019/02/IMG_5434.jpg",
             legend: "You And Whoose Army? @Estadio Nacional de Lima Perú 17/04/2018"
         }
-    ]
+    ],
+    media: [
+        {
+            title: 'Audio',
+            source: 'http://jacobo.totoringo.com/wp-content/uploads/2019/02/Thom-Yorke-Suspirium-Live-from-Electric-Lady-Studios.mp3',
+            audioOnly: true,
+            description: 'Suspirium',
+            class: 'iso-blade-card',
+        },
+        {
+            title: 'Video',
+            source: 'http://jacobo.totoringo.com/wp-content/uploads/2019/02/videoplayback.mp4',
+            audioOnly: false,
+            description: 'Glass Eyes @ Moda Center - PDX',
+            class: 'geriatron-card',
+        },
+    ],
 }
