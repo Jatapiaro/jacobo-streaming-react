@@ -70,6 +70,7 @@ export default class App extends Component {
                                         <Player
                                             audioOnly={card.audioOnly}
                                             source={card.source}
+                                            youtube={card.youtube}
                                         />
                                     </center>
                                     <CardBody>
@@ -175,7 +176,15 @@ App.defaultProps = {
             source: 'http://jacobo.totoringo.com/wp-content/uploads/2019/02/videoplayback.mp4',
             audioOnly: false,
             description: 'Glass Eyes @ Moda Center - PDX',
+            class: 'coco-game-card',
+        },
+        {
+            title: 'Video de pruebas (youtube)',
+            source: 'HK9UO9U0y9U',
+            audioOnly: false,
+            description: 'Prueba de sitio',
             class: 'geriatron-card',
+            youtube: true
         },
     ],
 }

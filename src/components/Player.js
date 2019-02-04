@@ -6,13 +6,22 @@ export default class Player extends React.Component {
         return(
             <div>
                 {
-                    this.props.audioOnly === false &&
+                    this.props.youtube &&
+                    <iframe width="320" height="240" 
+                        src={`https://www.youtube.com/embed/${this.props.source}`}
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                }
+                {
+                    this.props.youtube === false && this.props.audioOnly === false &&
                     <video width="320" height="240" autoplay="false" controls>
                         <source src={this.props.source} type="video/ogg" />
                     </video>
                 }
                 {
-                    this.props.audioOnly === true &&
+                    this.props.youtube === false && this.props.audioOnly === true &&
                     <audio controls>
                         <source src={this.props.source} type="audio/ogg" />
                     </audio>
@@ -25,6 +34,7 @@ export default class Player extends React.Component {
 
 Player.defaultProps = {
     audioOnly: true,
-    source: ''
+    source: '',
+    youtube: false,
 }
 
