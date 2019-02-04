@@ -180,7 +180,7 @@ App.defaultProps = {
         },
         {
             title: 'Video de pruebas (youtube)',
-            source: 'HK9UO9U0y9U',
+            source: 'g9hOfzYQzqk',
             audioOnly: false,
             description: 'Prueba de sitio',
             class: 'geriatron-card',
