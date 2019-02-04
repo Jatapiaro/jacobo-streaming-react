@@ -22,7 +22,7 @@ export default class Player extends React.Component {
                 }
                 {
                     this.props.youtube === false && this.props.audioOnly === true &&
-                    <audio controls>
+                    <audio autoplay={false} controls>
                         <source src={this.props.source} type="audio/ogg" />
                     </audio>
                 }
