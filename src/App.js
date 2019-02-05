@@ -27,7 +27,7 @@ export default class App extends Component {
                         <h1 className="display-3">Bienvenido</h1>
                         <p className="lead">Este es un sitio para la clase de streaming</p>
                         <hr className="my-2" />
-                        <p>En la parte de abajo encontrarás una transmición de audio, de video y de radio (por confirmar). Además hay un pequeó carousel con imágenes. <br/> Si deseas ir a la versión del sitio en wordpress, da clic en el botón de abajo.</p>
+                        <p>En la parte de abajo encontrarás una transmisión de audio, de video y de radio (por confirmar). Además hay un pequeó carousel con imágenes. <br/> Si deseas ir a la versión del sitio en wordpress, da clic en el botón de abajo.</p>
                         <p className="lead">
                             <a href="http://jacobo.totoringo.com" target="_blank" className="btn btn-round btn-meet-me">
                                 Ir a la versión de wordpress
@@ -36,7 +36,7 @@ export default class App extends Component {
                     </Jumbotron>
                     <div className="projects-label">
                         <center>
-                            <h1>Transmiciones</h1>
+                            <h1>Transmisiones</h1>
                         </center>
                     </div>
                     <div className="projects">
