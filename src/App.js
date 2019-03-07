@@ -125,7 +125,7 @@ App.defaultProps = {
             title: 'Streaming de radio',
             source: 'http://radio.totoringo.com:8000/live',
             audioOnly: true,
-            description: 'Fecha por confirmar',
+            description: 'El día 7 de marzo a las 21:50 horas se transmitirá un programa de radio en el que expreso porque esta última temporada de GoT no me emociona. A las 21:45 empezará la transmisión con un poco de música, solo se transmitirá una canción, después de eso, el programa debería empezar.',
             class: 'geriatron-card',
         },
     ],
